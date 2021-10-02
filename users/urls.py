@@ -10,16 +10,14 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
 
-router = DefaultRouter()
-router.register(r"register", views.Registering)
 
-token= TokenObtainPairView.as_view()
+token = TokenObtainPairView.as_view()
 token_refresh = TokenRefreshView.as_view()
 authentication = [
     # Authentication
     path("auth/login/", token, name="token_obtain_pair"),
     path("auth/login/refresh/", token_refresh, name="token_refresh"),
-    path("auth/register/", include(router.urls)),
+    path("auth/register/", views.Registering.as_view()),
 ]
 
 
@@ -30,6 +28,7 @@ profiles = [
     path("", profile_list, name="profile_list"),
     path("<str:pk>/", profile_detail, name="profile_detail"),
     path("<str:pk>/update/", views.updateProfile.as_view()),
+    path("edit-account", views.updateProfile.as_view())
 ]
 urlpatterns = []
 urlpatterns += authentication
