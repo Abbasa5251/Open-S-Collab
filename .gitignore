@@ -126,7 +126,7 @@ ENV/
 env.bak/
 venv.bak/
 
-static/
+Open-S-Collab/static/
 
 # Spyder project settings
 .spyderproject
