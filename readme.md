@@ -50,7 +50,7 @@ This is a project that is built to help the people who want to start an open-sou
 
 -   a task managing app like Jira
 
-so [akzain](https://github.com/akzain) came up with the idea of have a wesite or an app that could do all the above things except for version control as [github](https://github.com) is irreplaceable
+so [akzain](https://github.com/akzain) came up with the idea of have a website or an app that could do all the above things except for version control as [github](https://github.com) is irreplaceable
 
 ### Tools and stacks we are using
 
