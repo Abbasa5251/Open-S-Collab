@@ -16,7 +16,7 @@ token_refresh = TokenRefreshView.as_view()
 authentication = [
     # Authentication
     path("auth/login/", token, name="token_obtain_pair"),
-    path("auth/login/refresh/", token_refresh, name="token_refresh"),
+    path("auth/refresh/", token_refresh, name="token_refresh"),
     path("auth/register/", views.Registering.as_view()),
 ]
 
