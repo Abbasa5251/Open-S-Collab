@@ -59,4 +59,4 @@ for our backend, we'll be using Django and to build our API we are using djangor
 as for our frontend, we will be using react js and will also make a vue version of the frontend as well.
 
 
-Join our [discord severr](https://discord.gg/us9mHJ7K) to talk with our community and get to know more about Open-S-Collab
+Join our [discord sever](https://discord.gg/us9mHJ7K) to talk with our community and get to know more about Open-S-Collab
