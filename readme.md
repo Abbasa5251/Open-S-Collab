@@ -54,8 +54,9 @@ so [akzain](https://github.com/akzain) came up with the idea of have a wesite or
 
 ### Tools and stacks we are using
 
-for our backend we'll be uisng [django](https://djangoproject.com) and to build our api we are using [djangorestframework(drf)](https://www.django-rest-framework.org/)
+for our backend, we'll be using Django and to build our API we are using djangorestframework(drf)
 
-as for our frontend we will be using [reactjs](https://reactjs.org) and will also make a vue version of frontend as well.
+as for our frontend, we will be using react js and will also make a vue version of the frontend as well.
 
-Join our [discord sever](https://discord.gg/us9mHJ7K) to talk with our community and get to know more about Open-S-Collab
+
+Join our [discord severr](https://discord.gg/us9mHJ7K) to talk with our community and get to know more about Open-S-Collab
