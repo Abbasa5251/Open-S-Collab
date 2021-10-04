@@ -7,10 +7,12 @@ $ git clone https://github.com/OpenSCollab/Open-S-Collab.git
 ```
 
 then cd into the project folder and then cd into the folder in which manage.py is there:
+
 ```sh
 $ cd Open-S-Collab
 $ cd open-s-collab
 ```
+
 download the requirements
 
 ```sh
@@ -34,23 +36,24 @@ $ python manage.py runserver
 
 and then navigate to `localhost:8000`
 
-
 ### About
 
-***This Project is ane [open source](https://opensource.com/resources/what-open-source) project so anyone can contribute to this project unless he is within the boundaries of the guidelines and rules of this project***
+**_This project is an [open source](https://opensource.com/resources/what-open-source) project so anyone can contribute to this project unless he is within the boundaries of the guidelines and rules of this project_**
 
-*This project is founded by [akzain](https://github.com/akzain) and [MidouWebDev](https://github.com/midouwebdev)*
+_The founder's of this project are [akzain](https://github.com/akzain) and [MidouWebDev](https://github.com/midouwebdev)_
 
-This is a project that is built to help the people who want to start an open source porject. Generally open source project needs different kinds of platforms like:
+This is a project that is built to help the people who want to start an open-source project. Generally, an open-source project needs different kinds of platforms like:
 
-* a chatting app to talk and discuss with their fellow devs.
-* a version control app in which github is mostly used
-* a video calling app like skype although discords also have the ability to attend a call or a meeting.
-* a task managing app like jira
+-   a chatting app to talk and discuss with their fellow devs
+-   a version control app in which GitHub has mostly used
+-   a video calling app like skype although discords also can attend a call or a meeting.
+
+-   a task managing app like Jira
 
 so [akzain](https://github.com/akzain) came up with the idea of have a wesite or an app that could do all the above things except for version control as [github](https://github.com) is irreplaceable
 
 ### Tools and stacks we are using
+
 for our backend we'll be uisng [django](https://djangoproject.com) and to build our api we are using [djangorestframework(drf)](https://www.django-rest-framework.org/)
 
 as for our frontend we will be using [reactjs](https://reactjs.org) and will also make a vue version of frontend as well.
