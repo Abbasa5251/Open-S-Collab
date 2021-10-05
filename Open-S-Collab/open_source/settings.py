@@ -63,14 +63,12 @@ TEMPLATES = [
 WSGI_APPLICATION = "open_source.wsgi.application"
 
 
-
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
-
 
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -102,7 +100,7 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
-MEDIA_ROOT = BASE_DIR / "static/images"
+MEDIA_ROOT = BASE_DIR / "static" / "images"
 
 MEDIA_URL = "/images/"
 
