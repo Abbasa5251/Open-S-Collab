@@ -25,9 +25,9 @@ profile_detail = views.SingleProfile.as_view()
 profile_list = views.Profiles.as_view()
 
 profiles = [
-    path("", profile_list, name="profile_list"),
-    path("<str:pk>/", profile_detail, name="profile_detail"),
-    path("<str:pk>/update/", views.updateProfile.as_view()),
+    path("projects", profile_list, name="profile_list"),
+    path("projects/<str:pk>/", profile_detail, name="profile_detail"),
+    path("projects/<str:pk>/update/", views.updateProfile.as_view()),
     path("edit-account", views.updateProfile.as_view())
 ]
 urlpatterns = []
