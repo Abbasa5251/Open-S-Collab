@@ -1,15 +1,10 @@
 from django.db import models
-from django.contrib.auth.models import User
-import uuid
-from django.db.models.query_utils import select_related_descend
-
-# Create your models here.
-
-from django.db.models.signals import post_save, post_delete
-
+from django.contrib.auth import get_user_model
 from django.core.exceptions import ValidationError
-
 from urllib.parse import urlparse
+import uuid
+
+User = get_user_model()
 
 
 def validate_url_github(value):
@@ -72,39 +67,14 @@ class Profile(models.Model):
     )
     social_website = models.URLField(max_length=200, blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
     id = models.UUIDField(
         default=uuid.uuid4, unique=True, primary_key=True, editable=False
     )
 
+    class Meta:
+        verbose_name = "profile"
+        verbose_name_plural = "profiles"
+
     def __str__(self):
         return str(self.username)
-
-
-def updateUser(sender, instance, created, **kwargs):
-    profile = instance
-    user = profile.user
-
-    if created == False:
-        user.first_name = profile.name
-        user.username = profile.username
-        user.email = profile.email
-        user.save()
-
-def createProfile(sender, instance, created, **kwargs):
-    if created:
-        user = instance
-        porfile = Profile.objects.create(
-            user = user,
-            username = user.username,
-            email = user.email,
-            name = user.first_name
-        )
-
-def deleteUser(sender, instance, **kwargs):
-    user = instance.user
-    user.delete()
-
-
-post_save.connect(createProfile, sender=User)
-post_save.connect(updateUser, sender=Profile)
-post_delete.connect(deleteUser, sender=Profile)
