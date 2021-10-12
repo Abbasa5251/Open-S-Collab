@@ -25,10 +25,10 @@ profile_detail = views.SingleProfile.as_view()
 profile_list = views.Profiles.as_view()
 
 profiles = [
-    path("projects", profile_list, name="profile_list"),
-    path("projects/<str:pk>/", profile_detail, name="profile_detail"),
-    path("projects/<str:pk>/update/", views.updateProfile.as_view()),
-    path("edit-account", views.updateProfile.as_view())
+    path("profiles", profile_list, name="profile_list"),
+    path("profiles/<str:pk>/", profile_detail, name="profile_detail"),
+    path("profiles/<str:pk>/update/", views.updateProfile.as_view()),
+    path("edit-account", views.updateProfile.as_view()),
 ]
 urlpatterns = []
 urlpatterns += authentication
